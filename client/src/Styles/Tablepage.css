@@ -1,0 +1,70 @@
+.table-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 6px;
+    text-align: center;
+}
+.user_name{
+    text-align: left;
+}
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.status {
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.status.active {
+    color: #1d8f1d;
+}
+
+.status.suspended {
+    color: #f7a704;
+}
+
+.status.inactive {
+    color: #d94343;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.icon-button:hover {
+    color: #0056b3;
+}
+
+.icon-button.delete {
+    color: #d94343;
+}
+
+.icon-button.delete:hover {
+    color: #a93232;
+}

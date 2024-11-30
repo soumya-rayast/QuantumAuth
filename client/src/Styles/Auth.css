@@ -1,0 +1,161 @@
+.auth-container {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #1d2c4f;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  background-color: #00f5e1;
+  color: #1d2c4f;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 8px;
+}
+
+.user-icon {
+  margin-top: 25px;
+}
+
+.user-icon .icon {
+  width: 80px;
+  height: 80px;
+  color: #77819c;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #77819c;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #77819c;
+  color: white;
+}
+
+.input-box input {
+  border-left: 1px solid grey;
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.input-box input::placeholder {
+  color: #9ea5b8;
+}
+
+.auth-container button {
+  padding: 10px;
+  background: #00f5e1;
+  color: #1d2c4f;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-container button:disabled {
+  background: #77819c;
+  cursor: not-allowed;
+}
+
+.auth-container button:hover {
+  background: #357ab8;
+}
+
+.auth-container p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  color: #00f5e1;
+  margin-bottom: 10px;
+}
+
+.toggle-form {
+  color: #00f5e1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    max-width: 300px; 
+    padding: 15px; 
+    margin-top: 20px;
+  }
+
+  .heading {
+    width: 150px; 
+    font-size: 10px;
+  }
+
+  .user-icon .icon {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .input-box {
+    padding: 8px;
+  }
+
+  .auth-container button {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    max-width: 300px; 
+    margin: 10px;
+  }
+
+  .heading {
+    font-size: 8px; 
+  }
+
+  .user-icon .icon {
+    width: 50px; 
+    height: 50px;
+  }
+
+  .auth-container button {
+    font-size: 12px; 
+  }
+
+  .input-box input {
+    font-size: 12px; 
+  }
+}

@@ -1,0 +1,1 @@
+export const Backend_api = "http://localhost:8000/api/auth"
